@@ -44,6 +44,7 @@ test:
     - pip
     - pytest
     - netCDF4
+    - openmm
   commands:
     - pip check
     - cd python/tests && pytest test_grid_force.py -v
