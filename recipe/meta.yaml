@@ -46,7 +46,7 @@ test:
     - netCDF4
   commands:
     - pip check
-    - pytest python/tests/test_grid_force.py -v
+    - cd python/tests && pytest test_grid_force.py -v
 
 about:
   home: https://github.com/jimtufts/openmmgridforce
