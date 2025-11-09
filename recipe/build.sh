@@ -23,10 +23,6 @@ cmake .. \
 make -j$CPU_COUNT
 make install
 
-# Set plugin directory for tests
-export OPENMM_PLUGIN_DIR=$PREFIX/lib/plugins
-make check
-
 # Build Python wrappers
 cd ../python
 

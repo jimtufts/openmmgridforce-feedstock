@@ -34,12 +34,19 @@ requirements:
     - {{ pin_compatible('openmm', max_pin='x.x') }}
 
 test:
+  source_files:
+    - python/tests
+    - python/prmtopcrd
+    - python/grids
   imports:
     - gridforceplugin
   requires:
     - pip
+    - pytest
+    - netCDF4
   commands:
     - pip check
+    - pytest python/tests/test_grid_force.py -v
 
 about:
   home: https://github.com/jimtufts/openmmgridforce
