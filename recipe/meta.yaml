@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/jimtufts/openmmgridforce/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 049b7448e18634cd5d9ef31a4e2fda68ce634db7165444c1fccba7e9095b55c6
+  url: https://github.com/jimtufts/openmmgridforce/archive/refs/tags/{{ version }}.tar.gz
+  sha256: c7f99a621132f0c4a8b92d02487e6343aaa1b57c5d81c18c5996b30e919bedac
 
 build:
   number: 0
