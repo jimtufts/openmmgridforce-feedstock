@@ -1,5 +1,5 @@
 {% set name = "openmmgridforce" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jimtufts/openmmgridforce/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 53657419ff349adae5fdf9dcbc8a04c1af3dfee898462dc4605d5959f32d3b40
+  sha256: c7f99a621132f0c4a8b92d02487e6343aaa1b57c5d81c18c5996b30e919bedac
 
 build:
   number: 0
@@ -47,7 +47,7 @@ test:
     - openmm
   commands:
     - pip check
-    - cd python/tests && pytest test_grid_force.py -v
+    - cd python/tests && pytest test_grid_force.py test_auto_grid.py test_auto_scaling.py -v
 
 about:
   home: https://github.com/jimtufts/openmmgridforce
